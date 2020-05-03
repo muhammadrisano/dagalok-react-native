@@ -1,3 +1,5 @@
 import Input from './Input';
 import Button from './Button';
-export {Input, Button};
+import Bmenu from './Bmenu';
+import Bprofile from './Bprofile';
+export {Input, Button, Bmenu, Bprofile};
