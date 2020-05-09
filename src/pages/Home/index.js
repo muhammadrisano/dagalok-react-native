@@ -3,7 +3,7 @@ import {View, Text, StyleSheet, Alert} from 'react-native';
 import {colors} from '../../utils';
 import {Bmenu, Bprofile} from '../../components';
 import {SearchInput} from '../../components';
-import {MenuFood} from './components';
+import {MenuFood, CardSection} from './components';
 
 const Home = () => {
   const [search, setSearch] = useState('');
@@ -27,6 +27,8 @@ const Home = () => {
         />
       </View>
       <MenuFood />
+      <View style={styles.space(20)} />
+      <CardSection />
     </View>
   );
 };
@@ -54,6 +56,11 @@ const styles = StyleSheet.create({
     paddingHorizontal: 15,
     marginTop: 18,
     marginBottom: 34,
+  },
+  space: height => {
+    return {
+      height,
+    };
   },
 });
 export default Home;

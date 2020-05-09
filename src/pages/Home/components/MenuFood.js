@@ -1,34 +1,21 @@
 import React from 'react';
-import {StyleSheet, Text, View, Image} from 'react-native';
+import {StyleSheet, View} from 'react-native';
 import {ScrollView} from 'react-native-gesture-handler';
 import {colors} from '../../../utils';
 import {MenuSayur} from '../../../assets/Image/menuImage';
+import {BKategori} from '../../../components';
 
 const Menufood = () => {
   return (
     <View style={styles.wrapper}>
+      {/* kategori menu */}
       <ScrollView horizontal={true}>
-        <View style={styles.contMenu}>
-          <Image source={MenuSayur} style={styles.imgMenu} />
-          <Text style={styles.text}>Sayur</Text>
-        </View>
-        <View style={styles.contMenu}>
-          <Image source={MenuSayur} style={styles.imgMenu} />
-          <Text style={styles.text}>Buah</Text>
-        </View>
-        <View style={styles.contMenu}>
-          <Image source={MenuSayur} style={styles.imgMenu} />
-          <Text style={styles.text}>Ikan</Text>
-        </View>
-        <View style={styles.contMenu}>
-          <Image source={MenuSayur} style={styles.imgMenu} />
-          <Text style={styles.text}>Sayur</Text>
-        </View>
-        <View style={styles.contMenu}>
-          <Image source={MenuSayur} style={styles.imgMenu} />
-          <Text style={styles.text}>Sayur</Text>
-        </View>
+        <BKategori img={MenuSayur} title="Sayur" />
+        <BKategori img={MenuSayur} title="Sayur" />
+        <BKategori img={MenuSayur} title="Sayur" />
+        <BKategori img={MenuSayur} title="Sayur" />
       </ScrollView>
+      {/* kategori item card */}
     </View>
   );
 };
@@ -37,7 +24,7 @@ export default Menufood;
 
 const styles = StyleSheet.create({
   wrapper: {
-    height: 42,
+    height: 45,
     width: '100%',
   },
   contMenu: {
