@@ -1,14 +1,16 @@
 import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+// import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
-import {Home, Profile, Cart, Category, History} from '../../pages';
+import {Profile, Cart, Category, History} from '../../pages';
+import HomeRoute from './routes/HomeRoute';
 import {colors} from '../../utils';
 const Tab = createBottomTabNavigator();
 
 function MyTabs() {
   return (
     <Tab.Navigator
+      initialRouteName="Category"
       tabBarOptions={{
         activeTintColor: colors.gDefault,
         style: {paddingTop: 12, height: 60, backgroundColor: '#fff'},
@@ -16,8 +18,8 @@ function MyTabs() {
         inactiveTintColor: colors.aGrey,
       }}>
       <Tab.Screen
-        name="Home"
-        component={Home}
+        name="HomeRoute"
+        component={HomeRoute}
         options={{
           tabBarLabel: 'hello',
           tabBarIcon: ({color, size}) => (

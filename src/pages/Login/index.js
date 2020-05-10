@@ -12,7 +12,7 @@ import {BgLogin} from '../../assets';
 import {TextInput} from 'react-native-gesture-handler';
 import {Button} from '../../components';
 
-const Login = () => {
+const Login = ({navigation}) => {
   return (
     <SafeAreaView style={styles.wrapper}>
       <StatusBar
@@ -32,7 +32,10 @@ const Login = () => {
               <View style={styles.space(10)} />
               <TextInput placeholder="Password" style={styles.inputText} />
               <View style={styles.space(25)} />
-              <Button title="Masuk" />
+              <Button
+                title="Masuk"
+                onPress={() => navigation.replace('Home')}
+              />
             </View>
           </View>
         </ImageBackground>

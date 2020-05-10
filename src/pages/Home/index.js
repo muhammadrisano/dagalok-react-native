@@ -5,10 +5,10 @@ import {Bmenu, Bprofile} from '../../components';
 import {SearchInput} from '../../components';
 import {MenuFood, CardSection} from './components';
 
-const Home = () => {
+const Home = ({navigation}) => {
   const [search, setSearch] = useState('');
   const handleSearch = () => {
-    Alert.alert(search);
+    navigation.navigate('Search');
   };
   return (
     <View style={styles.wrapper}>
@@ -23,7 +23,7 @@ const Home = () => {
         <SearchInput
           placeholder="Cari yang dibutuhkan"
           onPress={handleSearch}
-          onChangeText={e => setSearch(e)}
+          onChangeText={e => setSearch()}
         />
       </View>
       <MenuFood />

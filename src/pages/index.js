@@ -7,6 +7,7 @@ import Category from './Category';
 import Cart from './Cart';
 import History from './History';
 import Profile from './Profile';
+import Search from './Search';
 export {
   Home,
   Login,
@@ -17,4 +18,5 @@ export {
   Cart,
   History,
   Profile,
+  Search,
 };

@@ -4,4 +4,5 @@ import Bmenu from './Bmenu';
 import Bprofile from './Bprofile';
 import BKategori from './BKategori';
 import Card from './Card';
-export {Input, Button, Bmenu, Bprofile, BKategori, Card};
+import MenuCategory from './MenuCategory';
+export {Input, Button, Bmenu, Bprofile, BKategori, Card, MenuCategory};

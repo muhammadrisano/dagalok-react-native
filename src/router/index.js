@@ -1,14 +1,14 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 import {Splash, Login, Register, Home, WelcomeAuth, Profile} from '../pages';
-// import BottomNavigator from './BottomNavigator';
+import BottomNavigator from './BottomNavigator';
 
 const Stack = createStackNavigator();
 
 const Router = () => {
   return (
     // <Text>hello world</Text>
-    <Stack.Navigator initialRouteName="Profile">
+    <Stack.Navigator initialRouteName="BottomNavigator">
       {/* <Stack.Screen name="BottomNavigator" component={BottomNavigator} /> */}
       <Stack.Screen name="Splash" component={Splash} />
       <Stack.Screen
@@ -26,8 +26,8 @@ const Router = () => {
         }}
       />
       <Stack.Screen
-        name="Home"
-        component={Home}
+        name="BottomNavigator"
+        component={BottomNavigator}
         options={{
           headerShown: false,
         }}

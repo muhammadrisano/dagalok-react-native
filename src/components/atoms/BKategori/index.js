@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
     width: 120,
     height: 35,
     borderRadius: 4,
-    borderWidth: 1,
+    borderWidth: 0.5,
     borderColor: colors.gDefault,
     marginLeft: 15,
     elevation: 1,

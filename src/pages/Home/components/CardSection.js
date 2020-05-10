@@ -12,6 +12,7 @@ const CardSection = () => {
           price="100.000"
           satuan="Kg"
           from="Pasar Raya"
+          home
         />
         <View style={styles.space(25)} />
         <Card
@@ -20,6 +21,7 @@ const CardSection = () => {
           price="100.000"
           satuan="Kg"
           from="Pasar Raya"
+          home
         />
         <View style={styles.space(25)} />
         <Card
@@ -28,6 +30,7 @@ const CardSection = () => {
           price="100.000"
           satuan="Kg"
           from="Pasar Raya"
+          home
         />
         <View style={styles.space(25)} />
         <Card
@@ -36,6 +39,7 @@ const CardSection = () => {
           price="100.000"
           satuan="Kg"
           from="Pasar Raya"
+          home
         />
         <View style={styles.space(25)} />
         <Card
@@ -44,6 +48,7 @@ const CardSection = () => {
           price="100.000"
           satuan="Kg"
           from="Pasar Raya"
+          home
         />
       </ScrollView>
     </View>
