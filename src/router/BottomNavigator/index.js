@@ -10,7 +10,7 @@ const Tab = createBottomTabNavigator();
 function MyTabs() {
   return (
     <Tab.Navigator
-      initialRouteName="Category"
+      initialRouteName="HomeRoute"
       tabBarOptions={{
         activeTintColor: colors.gDefault,
         style: {paddingTop: 12, height: 60, backgroundColor: '#fff'},
